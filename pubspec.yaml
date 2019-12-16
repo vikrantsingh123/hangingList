@@ -1,6 +1,6 @@
 name: hanginglist
 description: A Flutter library to create a HangingList with animation on scrolling. You can also create HangingItems which you can rotate like a hanger and play with their flip property.
-version: 0.0.1
+version: 0.1.0
 author: Vikrant Singh<singh121vikrant@gmail.com>
 homepage: https://github.com/vikrantsingh123/hangingList
 
