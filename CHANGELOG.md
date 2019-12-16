@@ -1,3 +1,3 @@
-## [0.0.1] - TODO: Add release date.
+## [0.1.0]: Dec 16, 2019.
 
-- Initial release.
+- Contains fixes for performance.

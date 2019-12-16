@@ -1,6 +1,7 @@
 # Hanginglist
 
-A Flutter library to create a `HangingList` with animated changes which also lets you create `HangingItems` and also lets you play with their flip property.
+A Flutter library to create a `HangingList` with animation on scrolling. You can also create `HangingItems` which you can rotate like a hanger and play with their flip property.
+The idea is taken from hanging clothes in almirah.
 
 ![Hanging List Demo](demo/hangingList.gif)
 
@@ -84,6 +85,8 @@ List<HangingObject> list = [
         'Ashwini Complex, Indranagar',)];
 ```
 
+This package is currently in development. To enjoy all the features you can edit this package.
+
 ## FAQ
 
 **Q:** How can I change PageView Builder to ListViewBuilder ?
@@ -94,14 +97,10 @@ List<HangingObject> list = [
 
 **Q:** How can I add more gestures to List Items ?
 
-**A:** Go to HangingItem widget and in gestureDetector add your own gesture functionalities.
+**A:** Go to HangingList widget > HangingItem widget and in gestureDetector add your own gesture functionalities.
 
 ##
 
 **Q:** How can I change List Item decoration ?
 
-**A:** Go to the HangTransform widget and add your decoration there.
-
-## Credits
-
-This amazing package was originally created by [Vikrant Singh](https://github.com/vikrantsingh123) over [here](https://github.com/vikrantsingh123/hangingList).
+**A:** Go to the HangingItem widget > Animation Card widget > HangTransform widget and add your decoration there.
