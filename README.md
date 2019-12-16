@@ -3,7 +3,7 @@
 A Flutter library to create a `HangingList` with animation on scrolling. You can also create `HangingItems` which you can rotate like a hanger and play with their flip property.
 The idea is taken from hanging clothes in almirah.
 
-![Hanging List Demo](demo/hangingList.gif)
+![Hanging List Demo](demo/hangingList.gif) ![Flip Item Demo](demo/flipAnimation.gif)
 
 ## Getting Started
 
