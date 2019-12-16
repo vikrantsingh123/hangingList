@@ -64,24 +64,21 @@ class _HangingListState extends State<HangingList>
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        body: NotificationListener<ScrollNotification>(
+    return NotificationListener<ScrollNotification>(
       onNotification: widget.moveList
           ? (notification) {
               if (notification is ScrollStartNotification) {
               } else if (notification is ScrollUpdateNotification) {
-                setState(() {
-                  if (_pageController.position.userScrollDirection ==
-                      ScrollDirection.forward) {
-                    _angle = pi / 16;
-                  } else
-                    _angle = -pi / 16;
-                });
+                if (_pageController.position.userScrollDirection ==
+                    ScrollDirection.forward) {
+                  _angle = pi / 16;
+                } else {
+                  _angle = -pi / 16;
+                }
               } else if (notification is ScrollEndNotification) {
                 try {
-                  setState(() {
-                    endAnim = true;
-                  });
+                  endAnim = true;
+
                   if (_pageController.position.userScrollDirection ==
                       ScrollDirection.forward) {
                     initialiseAngle(true);
@@ -92,10 +89,8 @@ class _HangingListState extends State<HangingList>
                       .forward(from: 0.0)
                       .orCancel
                       .then((onValue) {
-                    setState(() {
-                      _angle = 0;
-                      endAnim = false;
-                    });
+                    _angle = 0;
+                    endAnim = false;
                   });
                 } on TickerCanceled {}
               }
@@ -123,9 +118,8 @@ class _HangingListState extends State<HangingList>
                         widget.height,
                         widget.width)));
           }),
-    )
-        // )
-        );
+    );
+    // )
   }
 
   @override

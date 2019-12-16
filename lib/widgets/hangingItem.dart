@@ -6,7 +6,7 @@ import 'animationCard.dart';
 class HangingItem extends StatefulWidget {
   final Widget front, back;
   final bool moveListItem;
-  double _height, _width;
+  final double _height, _width;
 
   HangingItem(
       this.front, this.back, this.moveListItem, this._height, this._width);
