@@ -2,7 +2,7 @@
 
 A Flutter library to create a `HangingList` with animated changes which also lets you create `HangingItems` and also lets you play with their flip property.
 
-![Hanging List Demo](./hanginglist.gif)
+![Hanging List Demo](demo/hanginglist.gif)
 
 ## Getting Started
 
