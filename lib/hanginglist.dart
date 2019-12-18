@@ -109,8 +109,8 @@ class _HangingListState extends State<HangingList>
             }
             return Transform.rotate(
                 angle: widget.moveList ? _angle : 0,
-                child: Padding(
-                    padding: EdgeInsets.fromLTRB(60, 20, 60, 20),
+                child: Container(
+                    padding: EdgeInsets.all(10),
                     child: HangingItem(
                         widget.frontSide(widget.list[index]),
                         widget.backSide(widget.list[index]),

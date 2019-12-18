@@ -13,7 +13,7 @@ The idea is taken from hanging clothes in almirah.
 
 ```yaml
 dependencies:
-  hanginglist: ^0.0.1
+  hanginglist: ^0.1.1
 ```
 
 #### 2. Import it
